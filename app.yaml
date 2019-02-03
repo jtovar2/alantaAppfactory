@@ -1,0 +1,17 @@
+service: atlantaappfactory
+runtime: python27
+api_version: 1
+threadsafe: true
+handlers:
+- url: /
+  static_files: dist/alantaAppfactory/index.html
+  upload: dist/alantaAppfactory/index.html
+- url: /
+  static_dir: dist/alantaAppfactory
+
+skip_files:
+- node_modules/
+- bower_components/
+- src/
+- e2e/
+- .git/
