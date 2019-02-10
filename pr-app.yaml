@@ -5,6 +5,15 @@ handlers:
 - url: /
   static_files: dist/alantaAppfactory/index.html
   upload: dist/alantaAppfactory/index.html
+- url: /about
+  static_files: dist/alantaAppfactory/index.html
+  upload: dist/alantaAppfactory/index.html
+- url: /portfolio
+  static_files: dist/alantaAppfactory/index.html
+  upload: dist/alantaAppfactory/index.html
+- url: /contact
+  static_files: dist/alantaAppfactory/index.html
+  upload: dist/alantaAppfactory/index.html
 - url: /
   static_dir: dist/alantaAppfactory
 
