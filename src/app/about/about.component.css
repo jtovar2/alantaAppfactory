@@ -1,0 +1,50 @@
+/*Bootstrap 4 (4.0.0-alpha.2) uses the css property column-count in the card-columns class to define how many columns of cards would be displayed inside the div element. 
+But this property has only two values: 
+
+The default value 1 for small screens (max-width: 34em)
+The value 3 for all other sizes (min-width: 34em)
+Here's how it is implemented in bootstrap.min.css :
+
+@media (min-width: 34em) {
+    .card-columns {
+        -webkit-column-count:3;
+        -moz-column-count:3;
+        column-count:3;
+        ⋮
+    }
+    ⋮
+}
+To make the card stacking responsive, you can add the following media queries to your css file and modify the values for min-width as per your requirements :*/
+
+
+@media (min-width: 34em) {
+    .card-columns {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+    }
+}
+
+@media (min-width: 48em) {
+    .card-columns {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+    }
+}
+
+@media (min-width: 62em) {
+    .card-columns {
+        -webkit-column-count: 4;
+        -moz-column-count: 4;
+        column-count: 4;
+    }
+}
+
+@media (min-width: 75em) {
+    .card-columns {
+        -webkit-column-count: 4;
+        -moz-column-count: 4;
+        column-count: 4;
+    }
+}
